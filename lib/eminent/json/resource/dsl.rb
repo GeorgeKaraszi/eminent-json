@@ -7,9 +7,12 @@ module Eminent
         def self.extended(klass)
           class << klass
             attr_accessor :id_val, :id_block, :type_val, :meta_val, :attribute_blocks
+            attr_accessor :before_blocks, :after_blocks
           end
 
           klass.attribute_blocks = {}
+          klass.before_blocks    = []
+          klass.after_blocks     = []
         end
 
         def inherited(klass)
@@ -17,7 +20,19 @@ module Eminent
           klass.id_block         = id_block
           klass.type_val         = type_val
           klass.meta_val         = meta_val
+          klass.before_blocks    = before_blocks.dup
+          klass.after_blocks     = after_blocks.dup
           klass.attribute_blocks = attribute_blocks.dup
+        end
+
+        def before(*hooks, &block)
+          hooks << block if block
+          hooks.each { |hook| before_blocks.unshift(hook) }
+        end
+
+        def after(*hooks, &block)
+          hooks << block if block
+          hooks.each { |hook| after_blocks.unshift(hook) }
         end
 
         def id(value = nil, &block)
