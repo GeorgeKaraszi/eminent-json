@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/GeorgeKaraszi/eminent-json.svg?branch=master)](https://travis-ci.org/GeorgeKaraszi/eminent-json)
+[![Maintainability](https://api.codeclimate.com/v1/badges/eecc7c0a8bb6357f8b90/maintainability)](https://codeclimate.com/github/GeorgeKaraszi/eminent-json/maintainability)
+ 
 # Eminent::Json
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/eminent/json`. To experiment with that code, run `bin/console` for an interactive prompt.
