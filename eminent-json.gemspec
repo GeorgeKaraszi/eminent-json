@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['George Protacio-Karaszi', 'Lucas Hosseini']
   spec.email         = ['mail@hellogeorge.io']
 
-  spec.summary       = 'A DSL modal json builder'
-  spec.description   = 'A DSL modal json builder'
-  spec.homepage      = 'http://google.com'
+  spec.summary       = 'A DSL for building json returns'
+  spec.description   = 'A DSL for building json returns'
+  spec.homepage      = 'https://github.com/GeorgeKaraszi/eminent-json'
   spec.license       = 'MIT'
   spec.required_ruby_version = ['>= 2.3.0']
 
