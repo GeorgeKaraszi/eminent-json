@@ -1,5 +1,16 @@
+AllCops:
+  TargetRubyVersion: 2.3
+
 Metrics/LineLength:
   Max: 120
 
 Layout/EndOfLine:
   EnforcedStyle: lf
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
