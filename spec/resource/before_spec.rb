@@ -51,7 +51,4 @@ RSpec.describe Eminent::Json::Resource, '.before' do
       expect(resource.as_hash[:attributes]).to eq(name: 'foo')
     end
   end
-
-  context 'Accessing exposures' do
-  end
 end
