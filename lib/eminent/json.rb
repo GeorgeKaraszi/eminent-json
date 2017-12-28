@@ -24,6 +24,5 @@ module Eminent
       jsonable_klass = inferrer[class_name]
       jsonable_klass.new(options.merge(object: object))
     end
-    # Your code goes here...
   end
 end
