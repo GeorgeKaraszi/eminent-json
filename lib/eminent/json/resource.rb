@@ -37,6 +37,7 @@ module Eminent
       end
       alias to_h    as_hash
       alias to_hash as_hash
+      alias as_json as_hash
 
       private
 
